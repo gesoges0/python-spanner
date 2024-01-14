@@ -205,7 +205,7 @@ class StreamedResultSet(object):
                 {
                     column: value
                     for column, value in zip(
-                        [column.name for column in self._metadata.row_type.fields], row
+                        [column.name for column in self.fields], row
                     )
                 }
             )
